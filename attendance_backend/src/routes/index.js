@@ -34,7 +34,9 @@ const router = express.Router();
  *                   type: string
  *                   example: development
  */
-// Health check endpoint for monitoring service availability
+/**
+ * Health check endpoint for testing
+ */
 router.get('/', healthController.check.bind(healthController));
 
 

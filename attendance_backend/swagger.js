@@ -8,12 +8,12 @@ const options = {
       version: '1.0.0',
       description: 'Backend API for college attendance tracker app. Handles user and attendance management, dashboard, and notifications.'
     },
-    servers: [
-      {
-        url: 'https://vscode-internal-385-beta.beta01.cloud.kavia.ai:3001/',
-        description: 'Secure backend'
-      }
-    ],
+    // servers: [
+    //   {
+    //     url: 'https://vscode-internal-385-beta.beta01.cloud.kavia.ai:3001/',
+    //     description: 'Secure backend'
+    //   }
+    // ],
     components: {
       securitySchemes: {
         bearerAuth: {

@@ -26,42 +26,37 @@ Error: Not allowed by CORS
     at Layer.handle [as handle_request] (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/layer.js:95:5)
     at trim_prefix (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/index.js:328:13)
     at /home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/index.js:286:9
-    at Function.process_params (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node src/server.js`[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node src/server.js`[39m
-Not all input has been taken into account at your final specification.
-Here's the report: 
-
-
- Error in ./src/routes/auth.routes.js :
-YAMLSemanticError: Nested mappings are not allowed in compact mappings at line 25, column 22:
-
-        description: Error: Email exists or data missing
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…
-
-node:events:495
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
-    at listenInCluster (node:net:1865:12)
-    at doListen (node:net:2014:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1844:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -98,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v18.20.6
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-[32m[nodemon] restarting due to changes...[39m
+    at Function.process_params (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/middleware/init.js:40:5)
+Error: Not allowed by CORS
+    at checkOrigin (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/src/app.js:39:14)
+    at /home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/cors/lib/index.js:219:13
+    at optionsCallback (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/cors/lib/index.js:199:9)
+    at corsMiddleware (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/cors/lib/index.js:204:7)
+    at Layer.handle [as handle_request] (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/middleware/init.js:40:5)
+Error: Not allowed by CORS
+    at checkOrigin (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/src/app.js:39:14)
+    at /home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/cors/lib/index.js:219:13
+    at optionsCallback (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/cors/lib/index.js:199:9)
+    at corsMiddleware (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/cors/lib/index.js:204:7)
+    at Layer.handle [as handle_request] (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/index.js:328:13)
+    at /home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/index.js:286:9
+    at Function.process_params (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/index.js:346:12)
+    at next (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/middleware/init.js:40:5)
+Error: Not allowed by CORS
+    at checkOrigin (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/src/app.js:39:14)
+    at /home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/cors/lib/index.js:219:13
+    at optionsCallback (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/cors/lib/index.js:199:9)
+    at corsMiddleware (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/cors/lib/index.js:204:7)
+    at Layer.handle [as handle_request] (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/atten[32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node src/server.js`[39m
 Not all input has been taken into account at your final specification.
 Here's the report: 
@@ -74,6 +69,9 @@ YAMLSemanticError: Nested mappings are not allowed in compact mappings at line 2
                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…
 
 Server running at http://0.0.0.0:3001
+/express/lib/router/index.js:346:12)
+    at next (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/router/index.js:280:10)
+    at expressInit (/home/kavia/workspace/code-generation/campusattend-94593-9fab8889/attendance_backend/node_modules/express/lib/middleware/init.js:40:5)
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node src/server.js`[39m
 Not all input has been taken into account at your final specification.
@@ -107,9 +105,27 @@ Emitted 'error' event on Server instance at:
 
 Node.js v18.20.6
 [31m[nodemon] app crashed - waiting for file changes before starting...[39m
-[32m[nodemon] restarting due to changes...[39m
+jections (node:internal/process/task_queues:83:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 3001
+}
+
+Node.js v18.20.6
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
+                                                                                                                                                                                                                                                                                     [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node src/server.js`[39m
 Not all input has been taken into account at your final specification.
+Here's the report: 
+
+
+ Error in ./src/routes/auth.routes.js :
+YAMLSemanticError: Nested mappings are not allowed in compact mappings atNot all input has been taken into account at your final specification.
 Here's the report: 
 
 
@@ -140,120 +156,7 @@ Emitted 'error' event on Server instance at:
 
 Node.js v18.20.6
 [31m[nodemon] app crashed - waiting for file changes before starting...[39m
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…
-
-Server running at http://0.0.0.0:3001
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node src/server.js`[39m
-Not all input has been taken into account at your final specification.
-Here's the report: 
-
-
- Error in ./src/routes/auth.routes.js :
-YAMLSemanticError: Nested mappings are not allowed in compact mappings at line 25, column 22:
-
-        description: Error: Email exists or data missing
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…
-
-node:events:495
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
-    at listenInCluster (node:net:1865:12)
-    at doListen (node:net:2014:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1844:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -98,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v18.20.6
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -98,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v18.20.6
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-[32m[nodemon] restarting due to changes...[39m
-[32m[nodemon] starting `node src/server.js`[39m
-Not all input has been taken into account at your final specification.
-Here's the report: 
-
-
- Error in ./src/routes/auth.routes.js :
-YAMLSemanticError: Nested mappings are not allowed in compact mappings at line 25, column 22:
-
-        description: Error: Email exists or data missing
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…
-
-node:events:495
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
-    at listenInCluster (node:net:1865:12)
-    at doListen (node:net:2014:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1844:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -98,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v18.20.6
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…
-
-Server running at http://0.0.0.0:3001
-the report: 
-
-
- Error in ./src/routes/auth.routes.js :
-YAMLSemanticError: Nested mappings are not allowed in compact mappings at line 25, column 22:
-
-        description: Error: Email exists or data missing
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…
-
-node:events:495
-      throw er; // Unhandled 'error' event
-      ^
-
-Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
-    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
-    at listenInCluster (node:net:1865:12)
-    at doListen (node:net:2014:7)
-    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
-Emitted 'error' event on Server instance at:
-    at emitErrorNT (node:net:1844:8)
-    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
-  code: 'EADDRINUSE',
-  errno: -98,
-  syscall: 'listen',
-  address: '0.0.0.0',
-  port: 3001
-}
-
-Node.js v18.20.6
-[31m[nodemon] app crashed - waiting for file changes before starting...[39m
-[32m[nodemon] restarting due to changes...[39m
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node src/server.js`[39m
 Not all input has been taken into account at your final specification.
 Here's the report: 
