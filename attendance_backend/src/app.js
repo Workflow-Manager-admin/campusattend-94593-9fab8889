@@ -61,11 +61,11 @@ app.options('*', cors(corsOptions));
 app.use('/docs', swaggerUi.serve, (req, res, next) => {
   const dynamicSpec = {
     ...swaggerSpec,
-    servers: [
-      {
-        url: `${req.protocol}://${req.get('host')}`,
-      },
-    ],
+    // servers: [
+    //   {
+    //     url: `${req.protocol}://${req.get('host')}`,
+    //   },
+    // ],
   };
   swaggerUi.setup(dynamicSpec)(req, res, next);
 });
