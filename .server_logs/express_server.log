@@ -30,7 +30,27 @@ YAMLSemanticError: Nested mappings are not allowed in compact mappings at line 2
         description: Error: Email exists or data missing
                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…
 
-Server running at http://0.0.0.0:3001
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at doListen (node:net:2014:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 3001
+}
+
+Node.js v18.20.6
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m
 [32m[nodemon] restarting due to changes...[39m
 [32m[nodemon] starting `node src/server.js`[39m
 Not all input has been taken into account at your final specification.
@@ -44,3 +64,35 @@ YAMLSemanticError: Nested mappings are not allowed in compact mappings at line 2
                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…
 
 Server running at http://0.0.0.0:3001
+emon] starting `node src/server.js`[39m
+Not all input has been taken into account at your final specification.
+Here's the report: 
+
+
+ Error in ./src/routes/auth.routes.js :
+YAMLSemanticError: Nested mappings are not allowed in compact mappings at line 25, column 22:
+
+        description: Error: Email exists or data missing
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^…
+
+node:events:495
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use 0.0.0.0:3001
+    at Server.setupListenHandle [as _listen2] (node:net:1817:16)
+    at listenInCluster (node:net:1865:12)
+    at doListen (node:net:2014:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:83:21)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1844:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -98,
+  syscall: 'listen',
+  address: '0.0.0.0',
+  port: 3001
+}
+
+Node.js v18.20.6
+[31m[nodemon] app crashed - waiting for file changes before starting...[39m

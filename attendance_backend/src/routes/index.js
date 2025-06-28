@@ -36,13 +36,7 @@ const router = express.Router();
  */
 router.get('/', healthController.check.bind(healthController));
 
-// Enable CORS preflight (OPTIONS) for the health check endpoint
-router.options('/', (req, res) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Methods', 'GET,OPTIONS');
-  res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-  res.sendStatus(204);
-});
+
 
 router.use('/auth', authRoutes);
 router.use('/user', userRoutes);
