@@ -13,6 +13,13 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
+// Explicitly handle CORS pre-flight for all routes including "/"
+app.options('*', cors({
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}));
+
 app.use('/docs', swaggerUi.serve, (req, res, next) => {
   const dynamicSpec = {
     ...swaggerSpec,
